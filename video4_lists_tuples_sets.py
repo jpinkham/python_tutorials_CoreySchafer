@@ -85,7 +85,7 @@ courses2 = ['French', 'Philosophy']
 # main benefit: more efficient to check list 'membership' since iteration isn't needed, including comparing two lists
 # create with { }
 
-#users = {'Pepe Le Pew', 'Yosemite Sam', 'Taz', 'Wiley E. Coyote, Super Genius', 'Tweety'}
+#users = {'Pepe Le Pew', 'Yosemite Sam', 'Taz', 'Wile E. Coyote, Super Genius', 'Tweety'}
 #users2 = {'Bugs Bunny', 'Taz', 'Tweety', 'Porky Pig'}
 #print('Daffy in the list?', 'Daffy Duck' in users)
 #print('Taz in the list2?', 'Taz' in users2)
