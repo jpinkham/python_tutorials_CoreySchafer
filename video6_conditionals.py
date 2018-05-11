@@ -6,8 +6,7 @@ print("Python interpreter: ", sys.executable, "\n")
 # print(sys.version)
 
 # Following along with https://www.youtube.com/watch?v=DZwmZ8Usvnk
-
-# Condition - key/value pairs (equiv to perl hash or JS assoc array)
+# Topic: Conditionals and Booleans
 
 # if False:
 #    print('Conditional was True')
@@ -25,7 +24,7 @@ else:
 # any switch/case?   Nope just keep adding 'elif'
 
 
-# Booleans:  and or not
+# Booleans:  and, or, not, is
 
 user = 'Admin'
 logged_in = False
@@ -65,8 +64,11 @@ print("a ID:", id(a), "b ID:", id(b))  # IDs are now exactly the same
 #    Any empty mapping ( {} )
 
 #condition = {}
-condition = ''
+#condition = ''
+condition = 2
+
+
 if condition:
-    print(condition, "evalues to True")
+    print(condition, "evaluates to True")
 else:
     print(condition, "evaluates to False")
