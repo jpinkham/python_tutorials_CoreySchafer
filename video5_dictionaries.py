@@ -42,7 +42,25 @@ print("contents of 'student' dictionary object, after deleting a key: ", student
 # it bails, after returns a somewhat vague (to me anyway, going on name alone): KeyError: 'nope'
 # if KeyError can only ever mean that key doesn't exist, then it's not vague
 
-# delete a dict item/key and return it / store it elsewhere
+# delete a dict item/key py popping from dict and return it / optionally store it elsewhere
 student_name = student.pop('name')
 print("Student name:", student_name)
 print("contents of 'student' dictionary object, after deleting a key via pop(): ", student)
+
+
+# number of keys in the dict
+print("Num keys in student dict: ", len(student))
+
+# list of keys...same as perl cmd - returns 'dict_keys' object
+print("List of keys in student dict: ", student.keys(), "\n")
+
+# list of values (but no keys to help give you any context) - returns 'dict_values' object
+print("List of only values in student dict: ", student.values(), "\n")
+
+# list of key/value pairs - returns 'dict_items' object
+print("All items in student dict: ", student.items(), "\n")
+
+
+# cycle through list using for
+for stu_key, stu_value in student.items():
+    print(stu_key, ":", stu_value)
