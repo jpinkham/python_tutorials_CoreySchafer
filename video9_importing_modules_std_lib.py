@@ -7,7 +7,7 @@ import sys
 # Following along with https://www.youtube.com/watch?v=CqvZ3vGoGs0
 # Topic: Importing modules and exporing the std lib
 
-#import jp_module
+# import jp_module
 # import jp_module as jpm  #custom name, usually done to shorten original name
 # from jp_module import find_index  #import function from custom mod into local namespace
 from jp_module import find_index, test  # import module function and variable
@@ -15,7 +15,7 @@ from jp_module import find_index, test  # import module function and variable
 
 looney_list = ['Taz', 'Bugs Bunny', 'Yosemite Sam', 'Pepe Le Pew']
 
-#index = jp_module.find_index(looney_list, 'Bugs Bunny')
+# index = jp_module.find_index(looney_list, 'Bugs Bunny')
 # index = jpm.find_index(looney_list, 'Bugs Bunny')   #use short custom name
 index = find_index(looney_list, 'Bugs Bunny')  # use imported function
 
@@ -24,6 +24,20 @@ print(test)
 
 
 import random
-
 random_looney = random.choice(looney_list)
 print('Random Looney Tunes character:', random_looney)
+
+
+import os
+print('Current dir:', os.getcwd(), '\n', 'OS:', os.uname())
+print('Run by:', os.getuid(), '\n', 'PID:', os.getpid())
+
+print('\n\nlocation of the "os" module:', os.__file__)
+
+print('\n', os.environ.get('HOME'))
+print('ALL environment vars:\n', os.environ, '\n\n')
+
+
+print(os.path.exists('tmp/sdfsdf'))
+
+print(os.path.isdir('tmp/skl'))
