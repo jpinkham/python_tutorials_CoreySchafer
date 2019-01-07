@@ -1,4 +1,7 @@
 #!/usr/bin/env python
+
+# Video located at https://www.youtube.com/watch?v=k9TUPpGqYTo&list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU&index=3&t=0s
+
 import sys
 
 
